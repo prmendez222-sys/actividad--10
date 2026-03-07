@@ -13,8 +13,7 @@ do
 {
     Console.WriteLine("1. ingresar Producto");
     Console.WriteLine("2. ver lista de productos");
-    Console.WriteLine("3. eliminar Producto");
-    Console.WriteLine("4. salir");
+    Console.WriteLine("3. salir");
     Console.WriteLine();
     Console.Write("ingrese una opcion: ");
     opcion = Console.ReadLine();
