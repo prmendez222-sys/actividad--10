@@ -45,6 +45,14 @@ do
 
             Presionar();
             break;
+        case "3":
+            Console.WriteLine("saliendo...");
+            Thread.Sleep(1000);
+            break;
+        default:
+            Console.WriteLine("opcion no valida");
+            Presionar();
+            break;
     }
     Console.Clear();
 } while (opcion != "3");
