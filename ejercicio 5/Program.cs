@@ -2,8 +2,9 @@
 {
     Console.WriteLine();
     Console.WriteLine("Presione Enter Para continuar");
-    Console.WriteLine();
+    Console.ReadLine();
 }
+
 Dictionary<string,string> usuario= new Dictionary<string,string>();
 string opcion;
 do
@@ -14,6 +15,7 @@ do
     Console.WriteLine();
     Console.Write("ingrese una opcion: ");
     opcion= Console.ReadLine();
+    Console.Clear();
 
     switch (opcion)
     {
@@ -21,7 +23,7 @@ do
             Console.Write("Ingrese nombre de Usuario: ");
             string nombreU= Console.ReadLine();
             Console.WriteLine();
-            Console.WriteLine("Ingrese una contraseña: ");
+            Console.Write("Ingrese una contraseña: ");
             string ContrasenaU= Console.ReadLine();
             usuario.Add(nombreU, ContrasenaU);
             Console.WriteLine();
@@ -51,4 +53,5 @@ do
             Presionar();
             break;
     }
+    Console.Clear();
 } while (opcion!="3");
